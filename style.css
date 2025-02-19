@@ -40,6 +40,14 @@ h2 {
     color: #333; /* Un color más oscuro para que resalte */
 }
 
+p {
+    text-align: center;
+    font-size: 24px; /* Ajusta el tamaño del texto */
+    color: #333; /* Color opcional */
+}
+
+
+
 .container {
     width: 80%;
     max-width: 800px; /* Ajusta el ancho máximo para centrar mejor */
@@ -75,21 +83,31 @@ input, select, textarea {
     font-size: 14px;
 }
 
-.btn {
-    background-color: rgb(229, 165, 137);
-    color: white;
-    padding: 12px;
-    border: none;
-    width: 100%;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: 0.3s;
+.botones {
+    display: flex;
+    justify-content: center; /* Centra el botón horizontalmente */
+    align-items: center; /* Asegura que esté alineado verticalmente */
+    margin-top: 20px; /* Agrega espacio arriba si es necesario */
 }
 
-.btn:hover {
-    background-color: rgb(247, 199, 179);
+.btn-1 {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #daa185;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+    text-align: center;
 }
+
+/* Efecto hover */
+.btn-1:hover {
+    background-color: #EACCB3;
+}
+
+
 
 label {
     font-weight: bold;

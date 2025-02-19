@@ -6,12 +6,14 @@
     <link rel="icon" type="" href="img/buscar.png">
     <title>TRANZACT FORM</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     
     <div class="container">
         <h2>Formulario de Seguro de Vida</h2>
-        <form action="/submit" method="POST">
+        <form onsubmit="enviarFormulario(event)" method="POST">
+
             <div class="form-row">
                 <div>
                     <label for="nombre">Nombre Completo</label>
@@ -25,7 +27,7 @@
             <div class="form-row">
                 <div>
                     <label for="telefono">Número de Teléfono</label>
-                    <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{10}">
+                    <input type="tel" id="telefono" name="telefono" minlength="9">
                 </div>
                 <div>
                     <label for="email">E-mail</label>
@@ -73,10 +75,14 @@
                 </div>
             </div>
             
-                       
-            <button type="submit" class="btn">Enviar</button>
+            <div class="botones">
+                <a href="index3.html" class="btn-1">Registrarse</a>
+            </div>
+            
         </form>
     </div>
+
+    <script src="app.js"></script>
 
 
 </body>
